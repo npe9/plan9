@@ -1,0 +1,33 @@
+ARCH=\
+	alphapc\
+	bcm\
+	bitsy\
+	kw\
+	mtx\
+	omap\
+	omap4\
+	pc\
+	pc64\
+	ppc\
+	sgi\
+	teg2\
+	xen\
+	zynq\
+
+all:V:
+	for(i in $ARCH)@{
+		cd $i
+		mk
+	}
+
+installall install:V:
+	for(i in $ARCH) @{
+		cd $i
+		mk install
+	}
+
+clean:V:
+	for(i in $ARCH) @{
+		cd $i
+		mk clean
+	}
