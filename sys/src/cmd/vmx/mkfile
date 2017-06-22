@@ -1,0 +1,16 @@
+</$objtype/mkfile
+
+BIN=/$objtype/bin
+TARG=vmx
+HFILES=dat.h fns.h
+OFILES=\
+	vmx.$O \
+	ksetup.$O \
+	exith.$O \
+	io.$O \
+	vga.$O \
+	pci.$O \
+	virtio.$O \
+	vesa.$O \
+
+</sys/src/cmd/mkone
